@@ -1,0 +1,259 @@
+/* ================================
+   Create Payee Page
+   ================================ */
+
+.create-payee-page {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  background: #f4f7fb;
+  box-sizing: border-box;
+}
+
+/* ================================
+   Card
+   ================================ */
+
+.create-payee-card {
+  width: 100%;
+  max-width: 850px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+/* ================================
+   Header
+   ================================ */
+
+.create-payee-header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 20px;
+}
+
+.create-payee-header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.create-payee-header p {
+  margin: 0;
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* ================================
+   Form
+   ================================ */
+
+.create-payee-card form {
+  width: 100%;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* ================================
+   Inputs
+   ================================ */
+
+.form-group input {
+  width: 100%;
+  height: 44px;
+  padding: 0 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+.form-group input:hover {
+  border-color: #9ca3af;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* ================================
+   Buttons
+   ================================ */
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.form-actions button {
+  min-width: 130px;
+  height: 44px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Create button */
+
+.form-actions button[type="submit"] {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.form-actions button[type="submit"]:hover {
+  background: #1d4ed8;
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.25);
+}
+
+.form-actions button[type="submit"]:active {
+  transform: translateY(1px);
+}
+
+.form-actions button[type="submit"]:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Cancel button */
+
+.secondary-button {
+  background: #ffffff;
+  color: #374151;
+  border: 1px solid #d1d5db !important;
+}
+
+.secondary-button:hover {
+  background: #f9fafb;
+  border-color: #9ca3af !important;
+}
+
+/* ================================
+   Messages
+   ================================ */
+
+.success-message,
+.error-message {
+  margin: 20px 0 0;
+  padding: 12px 15px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.success-message {
+  color: #166534;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.error-message {
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+/* ================================
+   Access Denied
+   ================================ */
+
+.create-payee-card h1 {
+  color: #1f2937;
+}
+
+.create-payee-card > p {
+  color: #6b7280;
+  font-size: 15px;
+  margin: 10px 0 20px;
+}
+
+.create-payee-card > button {
+  height: 44px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.create-payee-card > button:hover {
+  background: #1d4ed8;
+}
+
+/* ================================
+   Responsive Design
+   ================================ */
+
+@media (max-width: 700px) {
+  .create-payee-page {
+    padding: 20px 15px;
+  }
+
+  .create-payee-card {
+    padding: 25px 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .create-payee-header h1 {
+    font-size: 24px;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+}

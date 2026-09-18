@@ -1,0 +1,107 @@
+.disbursement-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 30px;
+}
+
+.disbursement-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.disbursement-header {
+    margin-bottom: 30px;
+}
+
+.disbursement-header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #111827;
+}
+
+.disbursement-header p {
+    margin-top: 8px;
+    color: #6b7280;
+}
+
+/* Cards */
+
+.disbursement-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.disbursement-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.disbursement-card-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    font-size: 28px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.disbursement-card h2 {
+    margin: 0 0 10px;
+
+    font-size: 21px;
+    color: #111827;
+}
+
+.disbursement-card p {
+    min-height: 60px;
+
+    margin-bottom: 25px;
+
+    line-height: 1.6;
+    color: #6b7280;
+}
+
+.disbursement-card button {
+    padding: 11px 18px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.disbursement-card button:hover {
+    background: #1d4ed8;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .disbursement-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .disbursement-page {
+        padding: 20px;
+    }
+}

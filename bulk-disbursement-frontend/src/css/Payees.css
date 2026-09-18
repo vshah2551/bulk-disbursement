@@ -1,0 +1,164 @@
+.payees-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 55px 40px 60px;
+}
+
+/* Header */
+
+.payees-header {
+  margin-bottom: 35px;
+}
+
+.payees-header h1 {
+  margin: 0 0 8px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #172554;
+}
+
+.payees-header p {
+  margin: 0;
+  font-size: 16px;
+  color: #64748b;
+}
+
+/* Cards */
+
+.payees-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.payee-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+
+  min-height: 220px;
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.payee-card:hover {
+  transform: translateY(-3px);
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+}
+
+/* Icons */
+
+.payee-card-icon {
+  width: 52px;
+  height: 52px;
+
+  min-width: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* Card content */
+
+.payee-card-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+  min-height: 160px;
+}
+
+.payee-card-content h2 {
+  margin: 0 0 10px;
+
+  font-size: 22px;
+  font-weight: 650;
+
+  color: #172554;
+}
+
+.payee-card-content p {
+  margin: 0 0 25px;
+
+  font-size: 15px;
+  line-height: 1.6;
+
+  color: #64748b;
+}
+
+/* Buttons */
+
+.payee-card-content button {
+  align-self: flex-start;
+
+  margin-top: auto;
+
+  padding: 11px 20px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.payee-card-content button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.payee-card-content button:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .payees-page {
+    padding: 40px 20px;
+  }
+
+  .payees-header h1 {
+    font-size: 30px;
+  }
+
+  .payees-content {
+    grid-template-columns: 1fr;
+  }
+
+  .payee-card {
+    min-height: 200px;
+  }
+}
